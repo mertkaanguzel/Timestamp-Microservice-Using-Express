@@ -40,12 +40,12 @@ let listener = app.listen(/*process.env.PORT*/63372, function () {
 function formatTimeStamp(timestamp) {
   let time = {};
   
-  console.log(typeof(timestamp));
+
   time = isNaN(Number(timestamp)) ?
    new Date(timestamp) : new Date(Number(timestamp));
 
    if (timestamp == '') {
-    time = new Date();  
+    time = new Date();
   }
 
    if(time == "Invalid Date") return { error : "Invalid Date" };
