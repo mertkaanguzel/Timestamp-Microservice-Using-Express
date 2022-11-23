@@ -1,6 +1,3 @@
-
-
-
 const express = require('express');
 const app = express();
 
@@ -31,8 +28,8 @@ app.get('/api/:date', (req, res) => {
 
 
 
-let listener = app.listen(/*process.env.PORT*/63372, function () {
-  console.log('Your app is listening on port ' + listener.address().port);
+let listener = app.listen(63372, function () {
+  console.log('App is listening on port ' + listener.address().port);
 });
 
 function formatTimeStamp(timestamp) {
